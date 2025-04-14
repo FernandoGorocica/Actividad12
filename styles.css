@@ -1,38 +1,18 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
+    background-color: #f8f9fa;
     min-height: 100vh;
 }
 
-#app {
-    width: 80%;
-    max-width: 600px;
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s;
 }
 
-h1 {
-    color: #cc0000;
-    text-align: center;
-    text-transform: uppercase;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.jokes-list {
-    list-style: none;
-    padding: 0;
-}
-
-.joke-item {
-    background-color: white;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-}
-
-.joke-item:hover {
-    transform: translateX(10px);
+.card-img-top {
+    object-fit: contain;
+    height: 200px;
 }
